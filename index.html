@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = script.js></script>
+</head>
+<body onload="initialize();">
+    <h1>Shop Lift Up Inc.</h1>
+    
+    <label>
+        Grocery Item: <input type = "text" id = "gItem">
+    </label>
+
+    <div>
+        <button onclick = "addGroceries();">
+            Add Grocery Item
+        </button>
+    
+        <button onclick = "deleteGroceries();">
+            Delete Grocery Item
+        </button>
+
+        <button onclick = "moveUp();">
+            ↑
+        </button>
+
+        <button onclick = "moveDown();">
+            ↓
+        </button>
+    </div>
+
+    <h2>Groceries List</h2>
+    <div id = "gBasket"></div>
+</body>
+</html>
+
+
+<!--
+    Create a text box into which the user can enter a number. The number will
+    represent one of the items on the list. An up and a down arrow will move the
+    item up and down on the list.
+-->
+<!--
+    Enhancements
+        - No Duplicates
+        - Allow the user to change the number of specific item
+        - An item that has a quantity higher than one should read:
+            Item Name (Qty)
+-->

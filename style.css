@@ -1,0 +1,46 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: honeydew;
+    border: solid thick ;
+    border-radius: 20px;
+    background-color: brown;
+    color: mintcream;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 0px;
+    padding: 20px;
+    border: solid thick mintcream;
+    border-radius: 20px;
+    background-color: chocolate;
+}
+
+label {
+    font-size: x-large;
+}
+
+input, #gBasket{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}

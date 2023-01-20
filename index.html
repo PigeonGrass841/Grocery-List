@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery List</title>
+    <title>Grocery List 🛒</title>
     <link rel = "stylesheet" href = "style.css">
     <script src = script.js></script>
 </head>
 <body onload="initialize();">
-    <h1>Shop Lift Up Inc.</h1>
-    
+    <h1>Shop Lift Up, Inc. 🛒</h1>
+    <p>
+        Welcome to Shop Lift Up, Inc. Everyone needs to go grocery shopping.
+        And when you go grocery shopping, you need a list. Wouldn't it be 
+        great if there was an online option? Of course it would!
+    </p>
+    <p>
+        We designed a grocery list web based utility that helps you create a 
+        list of the groceries you plan to buy. To start, enter the name of a 
+        grocery item and click the button "Add Grocery Item."
+    </p>
+    <h3>
+        Basic Instructions
+    </h3>
+    <ul>
+        <li>Add Grocery Item: Enter grocery item name.</li>
+        <li>Delete Grocery Item: Delete grocery item name or number.</li>
+        <li>Up Arrow: Move grocery item number up the list by one.</li>
+        <li>Down Arrow: Move grocery item number down the list by one.</li>
+    </ul>
+
     <label>
-        Grocery Item: <input type = "text" id = "gItem">
+        Grocery Item Name: <input type = "text" id = "gItem">
     </label>
 
     <div>
@@ -20,7 +39,17 @@
             Add Grocery Item
         </button>
     
-        <button onclick = "deleteGroceries();">
+        <button onclick = "deleteGroceriesName();">
+            Delete Grocery Item
+        </button>
+    </div>
+
+    <label>
+        Grocery Item Number: <input type = "number" id = "gNum">
+    </label>
+
+    <div>
+        <button onclick = "deleteGroceriesNum();">
             Delete Grocery Item
         </button>
 
@@ -37,17 +66,3 @@
     <div id = "gBasket"></div>
 </body>
 </html>
-
-
-<!--
-    Create a text box into which the user can enter a number. The number will
-    represent one of the items on the list. An up and a down arrow will move the
-    item up and down on the list.
--->
-<!--
-    Enhancements
-        - No Duplicates
-        - Allow the user to change the number of specific item
-        - An item that has a quantity higher than one should read:
-            Item Name (Qty)
--->
